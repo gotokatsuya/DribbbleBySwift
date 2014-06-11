@@ -8,22 +8,18 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+class MasterViewController: UITableViewController{
 
-    var objects = NSMutableArray()
-
-
+    var items: Item[] = []
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
-
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        self.navigationItem.rightBarButtonItem = addButton
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        self.search();
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,57 +27,78 @@ class MasterViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func insertNewObject(sender: AnyObject) {
-        if objects == nil {
-            objects = NSMutableArray()
-        }
-        objects.insertObject(NSDate.date(), atIndex: 0)
-        let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-    }
-
     // #pragma mark - Segues
-
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-            let indexPath = self.tableView.indexPathForSelectedRow()
-            let object = objects[indexPath.row] as NSDate
-            (segue.destinationViewController as DetailViewController).detailItem = object
+            var detailViewController: DetailViewController = segue.destinationViewController as DetailViewController
+            var index = self.tableView.indexPathForSelectedRow().row
+            var selectedItem = self.items[index].title
+            (segue.destinationViewController as DetailViewController).detailItem = selectedItem
         }
     }
-
+    
+    
     // #pragma mark - Table View
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return items.count
     }
+    
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
 
-        let object = objects[indexPath.row] as NSDate
-        cell.textLabel.text = object.description
+        let item = items[indexPath.row] as Item
+        cell.textLabel.text = item.title
+        
+        var q_global: dispatch_queue_t = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        var q_main: dispatch_queue_t  = dispatch_get_main_queue();
+        dispatch_async(q_global, {
+            var imageURL: NSURL = NSURL.URLWithString(item.imageUrl)
+            var imageData: NSData = NSData(contentsOfURL: imageURL)
+            
+            var image: UIImage = UIImage(data: imageData)
+            dispatch_async(q_main, {
+                    cell.image = image;
+                    cell.layoutSubviews()
+                })
+            })
+        
         return cell
     }
+    
 
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
         return true
     }
-
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            objects.removeObjectAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-        }
+    
+    
+    func search(){
+        let manager = AFHTTPRequestOperationManager()
+        manager.GET("http://api.dribbble.com//shots/debuts?page=1", parameters: nil,
+        success: {
+        (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
+            var jsonResult = responseObject as Dictionary<String, AnyObject>
+            
+            var shots : NSArray = jsonResult["shots"] as NSArray
+           
+            for result: AnyObject in shots {
+                var title: String? = result["title"] as? String
+                var image_url: String? = result["image_url"] as? String
+            
+                var newItem = Item(title: title, imageUrl: image_url)
+                self.items.append(newItem)
+            }
+            
+            self.tableView.reloadData()
+            
+        }, failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
+            print(error)
+        })
     }
-
-
+    
 }
 

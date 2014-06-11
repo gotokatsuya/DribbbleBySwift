@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DribbbleBySwift/MasterViewController.swift"
+            timestampString = "424185736.39142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "search()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DribbbleBySwift/MasterViewController.swift"
+            timestampString = "424185736.39142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "search()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DribbbleBySwift.MasterViewController.search (DribbbleBySwift.MasterViewController)() -&gt; ()"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.981723"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "1912">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DribbbleBySwift.MasterViewController.(search (DribbbleBySwift.MasterViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.981887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "6109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DribbbleBySwift.MasterViewController.(search (DribbbleBySwift.MasterViewController) -&gt; () -&gt; ()).(closure #2)"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.982034"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reabstraction thunk helper from @callee_owned (@owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.AFHTTPRequestOperation&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;) -&gt; (@unowned ()) to @callee_owned (@in (Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.AFHTTPRequestOperation&gt;, Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;)) -&gt; (@out ())"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.982188"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DribbbleBySwift/MasterViewController.swift"
+            timestampString = "424185736.39142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "search()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DribbbleBySwift/MasterViewController.swift"
+            timestampString = "424185736.39142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "search()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DribbbleBySwift.MasterViewController.(search (DribbbleBySwift.MasterViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.984428"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "5854">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DribbbleBySwift.MasterViewController.(search (DribbbleBySwift.MasterViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.984594"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "5890">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DribbbleBySwift.MasterViewController.(search (DribbbleBySwift.MasterViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.984742"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "5940">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DribbbleBySwift/MasterViewController.swift"
+            timestampString = "424185736.39142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "search()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DribbbleBySwift.MasterViewController.search (DribbbleBySwift.MasterViewController)() -&gt; ()"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.985978"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "1912">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DribbbleBySwift.MasterViewController.(search (DribbbleBySwift.MasterViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.986146"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "6109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DribbbleBySwift.MasterViewController.(search (DribbbleBySwift.MasterViewController) -&gt; () -&gt; ()).(closure #2)"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.986297"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reabstraction thunk helper from @callee_owned (@owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.AFHTTPRequestOperation&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;) -&gt; (@unowned ()) to @callee_owned (@in (Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.AFHTTPRequestOperation&gt;, Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;)) -&gt; (@out ())"
+                  moduleName = "DribbbleBySwift"
+                  urlString = "file:///Users/katsuyagoto/Documents/EureSpace/ios/DribbbleBySwift/DribbbleBySwift/MasterViewController.swift"
+                  timestampString = "424184194.986454"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
